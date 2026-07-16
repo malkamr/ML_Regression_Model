@@ -16,14 +16,19 @@ A plain linear regression gets an R² of about 0.67. Comparing a few models with
 ## Project structure
 
 ```
-ipl_deploy/
-├── train_model.py         # trains the model from ipl.csv, saves model.pkl + model_columns.json
-├── app.py                 # Flask app that loads the model and serves the form
-├── requirements.txt
+ipl_score_deployment/
 ├── templates/
-│   └── index.html         # prediction form
-└── static/
-    └── style.css
+│   └── index.html               # prediction form
+├── app.py                       # Flask app that loads the model and serves the form
+├── train_model.py                # trains the model from ipl.csv, saves model.pkl + model_columns.json
+├── ipl_score_prediction.ipynb    # original notebook the model was developed in
+├── ipl.csv                       # training data
+├── model.pkl                     # trained model
+├── model_columns.json            # column order the model expects at inference time
+├── style.css
+├── requirements.txt
+├── Deployment Link.txt           # live PythonAnywhere URL
+└── README.md
 ```
 
 ## Running it locally
