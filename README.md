@@ -27,7 +27,7 @@ ipl_score_deployment/
 ├── model_columns.json            # column order the model expects at inference time
 ├── style.css
 ├── requirements.txt
-├── Deployment Link.txt           # live PythonAnywhere URL
+├
 └── README.md
 ```
 
